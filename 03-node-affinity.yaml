@@ -9,7 +9,7 @@ spec:
         nodeSelectorTerms:
         - matchExpressions:
           - key: hardware
-            operator: in 
+            operator: In 
             values:
             - gpu
   containers:
