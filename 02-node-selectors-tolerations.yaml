@@ -9,14 +9,14 @@ spec:
   - name: nginx
     image: nginx
     imagePullPolicy: IfNotPresent
-    nodeSelector:
-      diskType: SSD
-    tolerations:
-    - key: "key1"
-      operator: "Equal"
-      value: "value1"
-      effect: "NoExecute"
-    - key: "key1"
-      operator: "Equal"
-      value: "value1"
-      effect: "NoSchedule"
+  nodeSelector:
+    diskType: SSD
+  tolerations:
+  - key: "key1"
+    operator: "Equal"
+    value: "value1"
+    effect: "NoExecute"
+  - key: "key1"
+    operator: "Equal"
+    value: "value1"
+    effect: "NoSchedule"
