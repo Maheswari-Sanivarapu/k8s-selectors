@@ -18,7 +18,8 @@ spec:
           matchExpressions:
           - key: another-node-label-key
             operator: In 
-            value: another-node-label-value
+            values: 
+            - another-node-label-value
   containers:
   - name: node-affinity
     image: nginx
