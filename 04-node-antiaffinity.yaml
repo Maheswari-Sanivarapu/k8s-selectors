@@ -13,5 +13,5 @@ spec:
             values:
             - gpu
   containers:
-  - name: nginx
+  - name: with-node-anti-affinity
     image: nginx
